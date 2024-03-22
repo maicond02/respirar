@@ -62,6 +62,8 @@ import ConfirmDialog from 'primevue/confirmdialog';
 import ConfirmationService from 'primevue/confirmationservice';
 import InlineMessage from 'primevue/inlinemessage';
 import InputMask from 'primevue/inputmask';
+import IconField from 'primevue/iconfield';
+import InputIcon from 'primevue/inputicon';
 
 export default defineNuxtPlugin((nuxtApp) => {
     nuxtApp.vueApp.use(DialogService);
@@ -126,5 +128,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     nuxtApp.vueApp.component('ToggleButton', ToggleButton)
     nuxtApp.vueApp.component('InputSwitch', InputSwitch)
     nuxtApp.vueApp.component('ProgressSpinner', ProgressSpinner) 
+    nuxtApp.vueApp.component('IconField', IconField)
+    nuxtApp.vueApp.component('InputIcon', ProgressSpinner) 
 
 });
