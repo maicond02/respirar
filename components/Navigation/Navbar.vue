@@ -4,9 +4,9 @@
         <Menubar :model="items" class="">
             <template #end>
                 <div class="flex align-items-center gap-2">
-                    <Button label="Login" severity="secondary" text raised />
-                    <Button label="Register"/>
-                    <InputText type="text"/>
+                    <Button class="hidden md:block" label="Login" severity="secondary" text raised />
+                    <Button class="hidden md:block" label="Register"/>
+                    <InputText class="hidden md:block" type="text"/>
                 </div>
             </template>
         </Menubar>
