@@ -1,7 +1,7 @@
 
 <template>
     <nav class="card">
-        <Menubar :model="items" >
+        <Menubar :model="items" class="">
             <template #end>
                 <div class="flex align-items-center gap-2">
                     <Button label="Login" severity="secondary" text raised />
@@ -19,19 +19,19 @@ export default {
         return {
             items: [
                 {
-                    label: 'Home',
+                    label: 'HOME',
                     icon: 'pi pi-home'
                 },
                 {
-                    label: 'About',
+                    label: 'ABOUT',
                     icon: 'pi pi-book'
                 },
                 {
-                    label: 'Contact',
+                    label: 'CONTACT',
                     icon: 'pi pi-envelope'
                 },
                 {
-                    label: 'Buy',
+                    label: 'BUY',
                     icon: 'pi pi-dollar'
                 }
             ]
@@ -39,3 +39,17 @@ export default {
     }
 };
 </script>
+
+<style scoped>
+    :deep(.p-menubar){
+        background: rgb(255, 250, 254) !important;
+        border: rgb(255, 250, 254) !important;
+    }
+    :deep(.p-menuitem-text){
+        color: rgb(107, 107, 107) !important;
+    }
+    :deep(.p-menuitem-icon){
+        color: rgb(107, 107, 107) !important;
+    }
+
+</style>

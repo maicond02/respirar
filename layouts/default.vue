@@ -2,7 +2,7 @@
     <div class="card relative z-2">
         <NavigationNavbar />
     </div>
-    <div class="m-2">
+    <div class="mt-2">
         <slot />
     </div>
 </template>

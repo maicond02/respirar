@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="home-card">
         <div class="flex">
             <div class="w-6">
                 <div class="p-col-12 p-md-6">
@@ -38,3 +38,9 @@ export default {
     }
 }
 </script>
+<style scoped>
+    .home-card{
+        background: rgb(255, 250, 254) !important;
+        border: rgb(255, 250, 254) !important;
+    }
+</style>
