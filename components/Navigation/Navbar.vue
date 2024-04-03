@@ -42,14 +42,13 @@ export default {
 
 <style scoped>
     :deep(.p-menubar){
-        background: rgb(255, 250, 254) !important;
-        border: rgb(255, 250, 254) !important;
+        border: none;
     }
     :deep(.p-menuitem-text){
-        color: rgb(107, 107, 107) !important;
+
     }
     :deep(.p-menuitem-icon){
-        color: rgb(107, 107, 107) !important;
+
     }
 
 </style>

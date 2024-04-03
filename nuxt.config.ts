@@ -3,7 +3,7 @@ import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
   devtools: { enabled: true },
 	css: [
-        'primevue/resources/themes/saga-blue/theme.css',
+        'primevue/resources/themes/aura-dark-blue/theme.css',
         'primevue/resources/primevue.css',
         'primeicons/primeicons.css',
         'primeflex/primeflex.css',
