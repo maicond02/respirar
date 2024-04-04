@@ -129,6 +129,6 @@ export default defineNuxtPlugin((nuxtApp) => {
     nuxtApp.vueApp.component('InputSwitch', InputSwitch)
     nuxtApp.vueApp.component('ProgressSpinner', ProgressSpinner) 
     nuxtApp.vueApp.component('IconField', IconField)
-    nuxtApp.vueApp.component('InputIcon', ProgressSpinner) 
+    nuxtApp.vueApp.component('InputIcon', InputIcon) 
 
 });
