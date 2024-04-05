@@ -64,6 +64,7 @@ import InlineMessage from 'primevue/inlinemessage';
 import InputMask from 'primevue/inputmask';
 import IconField from 'primevue/iconfield';
 import InputIcon from 'primevue/inputicon';
+import Chart from 'primevue/chart';
 
 export default defineNuxtPlugin((nuxtApp) => {
     nuxtApp.vueApp.use(DialogService);
@@ -129,6 +130,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     nuxtApp.vueApp.component('InputSwitch', InputSwitch)
     nuxtApp.vueApp.component('ProgressSpinner', ProgressSpinner) 
     nuxtApp.vueApp.component('IconField', IconField)
-    nuxtApp.vueApp.component('InputIcon', InputIcon) 
+    nuxtApp.vueApp.component('InputIcon', InputIcon)
+    nuxtApp.vueApp.component('Chart', Chart) 
 
 });
