@@ -1,21 +1,23 @@
 <template>
-    <div class="flex justify-content-center mt-6">
-        <img class="imagemLogo" src="/public/LOGORESP.png"/>
-        <div class="cardForm col-4 ">
+    <div class="flex justify-content-center grid grid-nogutter p-6">
+        <div class="col-12 md:col-6">
+            <img class="imagemLogo border-round-lg border-noround-right" src="/public/LOGORESP.png" height="100%" width="100%"/>
+        </div>
+        <div class="cardForm col-12 md:col-6 border-round-lg border-noround-left">
             <h1 class="m-4 flex justify-content-center align-content-start">Login</h1>
             <label class="m-4 flex justify-content-center align-content-start">Welcome to the Intelligent Air Purification System. Register or log in to experience.</label>
             <div class="formStyle flex flex-column gap-2 p-4">
                 <label>E-mail</label>
-                <InputText id="emailForm" v-model="value"/>
+                <InputText id="emailForm" v-model="email"/>
                 <small id="email-help">Enter your E-mail aderess.</small>
             </div>
             <div class="flex flex-column gap-2 pr-4 pb-4 pl-4">
                 <label>Password</label>
-                <InputText id="emailForm" v-model="value"/>
+                <InputText id="emailForm" v-model="password"/>
                 <small id="Password-help">Enter your Password.</small>
             </div>
             <div class="card flex justify-content-start p-4">
-                <Checkbox v-model="Checkbox" :binary="true" />
+                <Checkbox v-model="checkbox" :binary="true" />
                 <label class="pl-2">I agree to terms of service</label>
             </div>
             <div class="card flex justify-content-center">
@@ -26,7 +28,15 @@
 </template>
 
 <script>
-    const checked = ref(false);
+    export default{
+        data(){
+            return{
+                checkbox:false,
+                email:null,
+                password:null
+            }
+        }
+    }
 </script>
 
 <style scoped>
@@ -38,17 +48,7 @@
     width: 100%;
 }
 .cardForm{
-    border-top-right-radius: 3% !important;
-    border-top-left-radius: 0% !important;
-    border-bottom-left-radius: 0% !important;
-    border-bottom-right-radius: 3% !important;
     background-color: rgb(32, 32, 32);
-}
-.imagemLogo{
-    width:50%;
-    height: 50%;
-    border-top-left-radius: 3%;
-    border-bottom-left-radius: 3%;
 }
 .buttonLogin{
 
