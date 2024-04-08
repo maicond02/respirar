@@ -1,5 +1,5 @@
 <template>
-    <div class="grid flex w-12 p-4">
+    <div class="flex w-12">
         <div class="col-3 shadow-2 border-round-sm card-temp">
             <p class="flex justify-content-center"><i class="pi pi-sun text-8xl"></i></p>
             <div class="flex flex-column align-items-center">
@@ -46,7 +46,6 @@
             </div>
         </div>
         <div class="col-3 shadow-2 card-temp border-round-sm">
-            oi
         </div>
     </div>
 </template>

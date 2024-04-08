@@ -1,5 +1,5 @@
 <template>
-    <div class="card flex justify-content-center">
+    <div class="card flex justify-content-start">
         <Menu :model="items" />
     </div>
 </template>

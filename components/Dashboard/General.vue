@@ -1,12 +1,13 @@
 
 <template>
     <div class="flex">
-        <div class="w-2 flex justify-content-start">
+        <div class="w-2">
             <DashboardMenuLateral class="menu-lateral w-2"/>
         </div>
-        <div class="w-10">
+        <div class="w-10 p-4">
             <DashboardMenuTop />
             <DashboardCards class="mt-4"/>
+            <DashboardTable class="mt-4"/>
         </div>
     </div>
 </template>
