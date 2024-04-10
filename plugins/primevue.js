@@ -65,6 +65,7 @@ import InputMask from 'primevue/inputmask';
 import IconField from 'primevue/iconfield';
 import InputIcon from 'primevue/inputicon';
 import Chart from 'primevue/chart';
+import Divider from 'primevue/divider'
 
 export default defineNuxtPlugin((nuxtApp) => {
     nuxtApp.vueApp.use(DialogService);
@@ -132,5 +133,6 @@ export default defineNuxtPlugin((nuxtApp) => {
     nuxtApp.vueApp.component('IconField', IconField)
     nuxtApp.vueApp.component('InputIcon', InputIcon)
     nuxtApp.vueApp.component('Chart', Chart) 
+    nuxtApp.vueApp.component('Divider', Divider)
 
 });
