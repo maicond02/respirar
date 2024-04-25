@@ -1,6 +1,6 @@
 <template>
     <main>
         <HomeIntro />
-        <HomeFooter />
+        <HomeFooter class="mt-8"/>
     </main>
 </template>
