@@ -1,6 +1,6 @@
 <template>
     <div>
-        
+        <ContactPage/>
     </div>
 </template>
 <script>
