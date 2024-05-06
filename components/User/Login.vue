@@ -13,6 +13,7 @@
             <div class="flex flex-column gap-2 pr-4 pb-4 pl-4">
                 <label>Senha</label>
                 <InputText id="emailForm" v-model="password"/>
+                <a class="text-blue-400 underline cursor-pointer flex justify-content-end">Esqueceu sua senha? Clique aqui!</a>
             </div>
             <div class="card flex justify-content-center flex-column align-items-center">
                 <Button class="buttonLogin w-9 m-4" label="Sign in" />
