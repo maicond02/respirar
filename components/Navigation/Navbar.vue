@@ -19,28 +19,28 @@ export default {
         return {
             items: [
                 {
-                    label: 'HOME',
+                    label: 'INÍCIO',
                     icon: 'pi pi-home',
                     command: () => {
                         this.$router.push('/');                    
                     }
                 },
                 {
-                    label: 'ABOUT',
+                    label: 'SOBRE',
                     icon: 'pi pi-book',
                     command: () => {
                         this.$router.push('/about');                    
                     }
                 },
                 {
-                    label: 'CONTACT',
+                    label: 'CONTATO',
                     icon: 'pi pi-envelope',
                     command: () => {
                         this.$router.push('/contact');                    
                     }
                 },
                 {
-                    label: 'BUY',
+                    label: 'INSTALAÇÃO',
                     icon: 'pi pi-dollar',
                     command: () => {
                         this.$router.push('/buy');                    
