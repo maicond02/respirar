@@ -1,6 +1,6 @@
 <template>
     <div>
-        <AboutPage/>
+        <AboutGeneral/>
     </div>
 </template>
 <script>
