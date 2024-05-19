@@ -80,24 +80,79 @@ data() {
 }
 </script>
 
-<style #scoped>
+<style scoped>
 .Titulo {
   font-size: 5rem;
+  color: white;
+  text-align: center;
 }
 .card {
   background-color: rgb(32, 32, 32);
   border-radius: 7px;
+  padding: 20px;
+  margin: 10px;
+  color: white;
 }
 #editor {
-border: 1px solid rgb(32, 32, 32);
-background-color: rgb(9, 9, 11);
-min-height: 200px;
-overflow: auto;
+  border: 1px solid rgb(32, 32, 32);
+  background-color: rgb(26, 26, 26);
+  min-height: 200px;
+  overflow: auto;
+  padding: 10px;
+  color: white;
+  border-radius: 7px;
+}
+#username{
+    background-color: rgb(26, 26, 26);
+}
+#email{
+    background-color: rgb(26, 26, 26);
 }
 .responsive-image {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
 }
-
+.cardContact {
+  background-color: rgb(24, 24, 24);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  color: white;
+}
+.cardContact i {
+  margin-bottom: 15px;
+}
+.cardContact h1 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+.cardInstagram, .cardWhatsaap, .cardEmail {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+}
+.cardInstagram{
+    margin: 0;
+    color: rgb(255, 255, 255);
+    border: 2px solid transparent;
+    border-color: rgb(193, 53, 132);
+    background-color: rgb(131, 58, 180, 0.356);
+}
+.cardWhatsaap{
+    margin: 0;
+    color: white;
+    border: 2px solid transparent;
+    border-color: rgb(37, 211, 102);
+    background-color:rgb(7, 94, 84, 0.356);
+}
+.cardEmail{
+    margin: 0;
+    color: white;
+    border: 2px solid transparent;
+    border-color: rgb(0, 178, 255);
+    background-color: rgba(0, 106, 255, 0.356);
+}
 </style>
