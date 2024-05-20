@@ -1,8 +1,9 @@
 <template>
     <section>
         <div>
-            <section class="grid">
-                <div class="col-12 md:col-6 mt-8">
+            <section>
+                <div class="grid">
+                    <div class="col-12 md:col-6 mt-8">
                     <div class="flex flex-column align-items-center">
                         <span class="text-xl md:text-6xl font-semibold">Bem-vindo ao <strong class="text-blue-500">RespirAr</strong>:</span>
                         <span class="text-xl md:text-6xl font-semibold">Monitoramento Avançado de Qualidade do Ar</span>
@@ -16,6 +17,7 @@
                 </div>
                 <div class="col-12 md:col-6">
                     <img src="@/assets/images/college.png" alt="college" width="100%">
+                </div>
                 </div>
                 <div class="grid equal-height">
                     <div class="col-12 md:col-4">
