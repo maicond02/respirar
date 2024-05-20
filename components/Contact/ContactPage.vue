@@ -1,71 +1,70 @@
 <template>
-    <div class="grid flex justify-content-center">
-        <h1 class="Titulo">
-        Let's Talk
-        </h1>
-    </div>
-    <div class="grid flex justify-content-center">
-        <div class="card flex flex-column justify-content-center col-12 md:col-4" >
-            <label class="pt-3 px-0" for="FullName">FullName</label>
-            <InputText class="" id="username" v-model="fullName" aria-describedby="username-help" />
-            <small>Enter your full name.</small>
-            <label class="pt-5 px-0-3" for="Email">E-mail</label>
-            <InputText class="" id="email" v-model="email" aria-describedby="email-help" />
-            <small>Enter your E-mail.</small>
-            <label class="pt-5 px-0-3" for="Message">Message</label>
-            <div class="pt-3 px-0-3" id="editor" contenteditable>
-              Type here.
+    <div class="flex justify-content-center grid grid-nogutter p-6">
+        <div class="col-12 md:col-6 bg-blue-300 border-round-md">
+            <img src="/public/Contac.png" width="100%">
+        </div>
+        <div class="cardForm col-12 md:col-6 border-round-lg border-noround-left">
+            <h1 class="m-4 flex justify-content-center align-content-start">Vamos conversar ! - <span class="text-blue-400 ml-2 mr-2">RespirAr Hub</span></h1>
+            <div class="flex flex-column gap-2 pr-4 pb-4 pl-4">
+                <label class="pt-3 px-0" for="FullName">Nome Completo</label>
+                <InputText class="" id="username" v-model="fullName" aria-describedby="username-help" />
             </div>
-            <small>Enter your message.</small>
+            <div class="flex flex-column gap-2 pr-4 pb-4 pl-4">
+                <label class="pt-5 px-0-3" for="Email">E-mail</label>
+                <InputText class="" id="email" v-model="email" aria-describedby="email-help" />
+            </div>
+            <div class="flex flex-column gap-2 pr-4 pb-4 pl-4">
+                <label class="pt-5 px-0-3" for="Message">Mensagem</label>
+                <div class="pt-3 px-0-3" id="editor" contenteditable> </div>
+            </div>
+            <div class="flex justify-content-end gap-2 pr-4 pb-4 pl-4">
+                <Button label="Enviar mensagem" class="w-4"/>
+            </div>
         </div>
     </div>
-    <div class="flex justify-content-center">
-        <img class="col-6" src="/public/Contac.png">
-    </div>
-
     <Divider align="center" type="dotted">
         <b>Other media</b>
     </Divider>
-  <div class="grid col-12 flex justify-content-center align-content-center">
-      <div class="cardContact col-12 sm:col-3 mt-7 mb-5 mr-5 ml-5">
-          <br>
-          <i class="pi pi-instagram flex justify-content-center" style="font-size: 3.0rem"></i>
-          <h1 class="flex justify-content-center">Instagram</h1>
-          <div class="cardInstagram flex justify-content-center mt-8">
-              <p>@RespirarContact</p>
-          </div>
-          <p class="flex justify-content-center">OR</p>
-          <div class="cardInstagram flex justify-content-center">
-              <p>@RespirarInstagram</p>
-          </div>
-      </div>
+    <div class="grid flex justify-content-center">
+        <div class="cardContact col-12 md:col-3">
+            <br>
+            <i class="pi pi-instagram flex justify-content-center" style="font-size: 3.0rem"></i>
+            <h1 class="flex justify-content-center">Instagram</h1>
+            <div class="cardInstagram flex justify-content-center mt-8">
+                <p>@RespirarContact</p>
+            </div>
+            <p class="flex justify-content-center">OR</p>
+            <div class="cardInstagram flex justify-content-center">
+                <p>@RespirarInstagram</p>
+            </div>
+        </div>
 
-      <div class="cardContact col-12 sm:col-3 mt-5 mb-0 mr-5 ml-5">
-          <br>
-          <i class="pi pi-whatsapp flex justify-content-center" style="font-size: 3.0rem"></i>
-          <h1 class="flex justify-content-center">Whatsapp</h1>
-          <div class="cardWhatsaap flex justify-content-center mt-8">
-              <p class="p-2">(19)99999-9999.</p>
-          </div>
-          <p class="flex justify-content-center">OR</p>
-          <div class="cardWhatsaap flex justify-content-center">
-              <p>(19)101010-1010.</p>
-          </div>
-      </div>
+        <div class="cardContact col-12 md:col-3">
+            <br>
+            <i class="pi pi-whatsapp flex justify-content-center" style="font-size: 3.0rem"></i>
+            <h1 class="flex justify-content-center">Whatsapp</h1>
+            <div class="cardWhatsaap flex justify-content-center mt-8">
+                <p class="p-2">(19)99999-9999.</p>
+            </div>
+            <p class="flex justify-content-center">OR</p>
+            <div class="cardWhatsaap flex justify-content-center">
+                <p>(19)101010-1010.</p>
+            </div>
+        </div>
 
-      <div class="cardContact col-12 sm:col-3 mt-7 mb-5 mr-5 ml-5">
-          <br>
-          <i class="pi pi-envelope flex justify-content-center" style="font-size: 3.0rem"></i>
-          <h1 class="flex justify-content-center">E-mail</h1>
-          <div class="cardEmail flex justify-content-center mt-8">
-              <p>RespirAr@gmail.com</p>
-          </div>
-          <p class="flex justify-content-center">OR</p>
-          <div class="cardEmail flex justify-content-center">
-              <p>RespirAr@hotmail.com.br</p>
-          </div>
-      </div>
-  </div>
+        <div class="cardContact col-12 md:col-3">
+            <br>
+            <i class="pi pi-envelope flex justify-content-center" style="font-size: 3.0rem"></i>
+            <h1 class="flex justify-content-center">E-mail</h1>
+            <div class="cardEmail flex justify-content-center mt-8">
+                <p>RespirAr@gmail.com</p>
+            </div>
+            <p class="flex justify-content-center">OR</p>
+            <div class="cardEmail flex justify-content-center">
+                <p>RespirAr@hotmail.com.br</p>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -81,6 +80,12 @@ data() {
 </script>
 
 <style scoped>
+
+.cardForm{
+    background-color: rgb(32, 32, 32);
+}
+
+
 .Titulo {
   font-size: 5rem;
   color: white;
