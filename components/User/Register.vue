@@ -27,7 +27,7 @@
                 <label class="pl-2">Log in after registration</label>
             </div>
             <div class="card flex justify-content-center">
-                <Button class="buttonLogin w-9 m-4" label="Register"/>
+                <Button class="buttonLogin w-9 m-4" label="Register" @click="RegisterAccount()"/>
             </div>
         </div>
     </div>
@@ -47,9 +47,17 @@ export default {
     methods: {
         submitForm() {
             if (this.checkbox) {
-            this.$router.push('/user/login');
+                this.$router.push('/user/login');
             }
-    }
+        },
+        RegisterAccount(){
+            if(this.name != '', this.email != '', this.password != '', this.confirmPassword != ''){
+                this.$toast.add({ severity: 'success', summary: 'Sucesso ao entrar', detail: 'Bem vindo ao respirAr' + ' Maicon Alves', life: 3000 });
+                this.$router.push('/user/dashboard');
+            }else{
+                this.$toast.add({ severity: 'error', summary: 'Erro ao entrar', detail: 'Preencha todos os campos de registro', life: 3000 });
+            }
+        }
 }
 }
 </script>

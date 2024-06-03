@@ -12,11 +12,11 @@
             </div>
             <div class="flex flex-column gap-2 pr-4 pb-4 pl-4">
                 <label>Senha</label>
-                <InputText id="emailForm" v-model="password"/>
+                <InputText id="emailForm" v-model="password" type="password"/>
                 <a class="text-blue-400 underline cursor-pointer flex justify-content-end">Esqueceu sua senha? Clique aqui!</a>
             </div>
             <div class="card flex justify-content-center flex-column align-items-center">
-                <Button class="buttonLogin w-9 m-4" label="Sign in" />
+                <Button class="buttonLogin w-9 m-4" label="Sign in" @click="userLogin()" />
                 <Divider align="center" type="dotted">
                     <b>OU</b>
                 </Divider>
@@ -24,19 +24,33 @@
                     <i class="pi pi-google"></i> <span class="ml-2 cursor-pointer">- Entrar com o Google</span>
                 </div>
                 <div class="mt-5">
-                    <span>Novo por aqui?</span> <a class="text-blue-400 underline cursor-pointer">Criar uma conta agora</a>
+                    <span>Novo por aqui?</span> <a class="text-blue-400 underline cursor-pointer" @click="this.$router.push('/user/register');">Criar uma conta agora</a>
                 </div>
             </div>
         </div>
     </div>
 </template>
-
 <script>
     export default{
         data(){
             return{
                 email:null,
                 password:null
+            }
+        },
+        methods:{
+            userLogin(){
+                if(this.email == "maicondouglas.md45@gmail.com" && this.password == "123"){
+                    this.$toast.add({ severity: 'success', summary: 'Sucesso ao entrar', detail: 'Bem vindo ao respirAr' + ' Maicon Alves', life: 3000 });
+                    this.$router.push('/user/dashboard');
+                }else if(this.email == "maicondouglas.md45@gmail.com" && this.password != "123"){
+                    this.$toast.add({ severity: 'error', summary: 'Erro ao entrar', detail: 'Usuário ou senha incorreto', life: 3000 });
+                }else if(this.email != "maicondouglas.md45@gmail.com" && this.password == "123"){
+                    this.$toast.add({ severity: 'error', summary: 'Erro ao entrar', detail: 'Usuário ou senha incorreto', life: 3000 });
+                }
+                else{
+                    this.$toast.add({ severity: 'error', summary: 'Erro ao entrar', detail: 'Usuário não encontrado na base de dados do sistema', life: 3000 });
+                }
             }
         }
     }
